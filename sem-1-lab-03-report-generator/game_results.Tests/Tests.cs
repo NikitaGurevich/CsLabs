@@ -8,7 +8,7 @@ public class ProgramTests
     private string[] _lines = null!;
 
     [SetUp]
-    public void SetUp() => _lines = File.ReadAllLines(*путь к файлу с логами*);
+    public void SetUp() => _lines = File.ReadAllLines("event_server.log");
 
     [Test]
     public void Build_UsesOnlyTheEventTimeRange()
