@@ -11,7 +11,7 @@ public class ProgramTests
     [SetUp]
     public void SetUp()
     {
-        string[] lines = File.ReadAllLines(*адрес файла с логами*);
+        string[] lines = File.ReadAllLines("event_server.log");
         _entries = Program.ParseLog(lines);
     }
 
