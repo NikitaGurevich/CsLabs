@@ -12,13 +12,7 @@ public class Program
     
     public static void Main()
     {
-        string[] temp = File.ReadAllLines(*адрес файла с логами*);
-        foreach (LogEntry line in FilterByDate(ParseLog(temp), new DateTime(2026, 9, 4)))
-        {
-            Console.WriteLine($"{line.Timestamp} [{line.Level}][{line.Category}] {line.Message}");
-        }
-        
-        
+        string[] temp = File.ReadAllLines("event_server.log");
     }
     
     public static LogEntry[] ParseLog(string[] temp)
