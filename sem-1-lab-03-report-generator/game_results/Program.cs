@@ -4,7 +4,7 @@ public class Program
 {
    static void Main()
    {
-      string[] temp = File.ReadAllLines(*путь к файлу с логами*);
+      string[] temp = File.ReadAllLines("event_server.log");
       string res = BuildReport(temp);
       Console.WriteLine(res);
    }
